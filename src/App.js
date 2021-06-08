@@ -25,9 +25,9 @@ function App() {
           <Route exact path="/" component={Page1} />
           <Route path="/P2" component={Page2} />
           <Route path="/P3" component={Page3} />
-          <Route path="/P2/P3" component={Page3} />
+          <Route path="/P2/P33" component={Page3} />
           <Route path="/P2-P3B" component={Page3} />
-          <Route path="/P2/P3/P4" component={Page4} />
+          <Route path="/P2/P33/P4" component={Page4} />
         </div>
       </Router>
     </div>

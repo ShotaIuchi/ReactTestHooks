@@ -23,7 +23,7 @@ function Page1() {
     <div className="App">
       page1
       <button onClick={() => history.push("/P3")}>page3</button>
-      <button onClick={() => history.push("/P2/P3")}>page2-3</button>
+      <button onClick={() => history.push("/P2/P33")}>page2-3</button>
     </div>
   );
 
