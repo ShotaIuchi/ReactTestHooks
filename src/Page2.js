@@ -13,7 +13,7 @@ function Page2() {
     setData(true);
   }
 
-  // const history = useHistory();
+  const history = useHistory();
 
   const location = useLocation()
   useEffect(() => {
@@ -25,12 +25,13 @@ function Page2() {
 
   return (
     <div className="App">
-      {/* page2 */}
-      {/* <button onClick={() => history.push("/P2/P3")}>page3</button> */}
+      page2
+      <button onClick={() => history.push("/P2/P3")}>page3</button>
+      <button onClick={() => history.push("/P2-P3B")}>page3B</button>
       <Router>
-        <Link to="/P2-P3">Page3</Link>
+        <Link to="/P2-P3A">Page3A</Link>
         <div>
-          <Route path="/P2-P3" component={Page3} />
+          <Route path="/P2-P3A" component={Page3} />
         </div>
       </Router>
     </div>

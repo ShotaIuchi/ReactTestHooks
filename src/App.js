@@ -20,11 +20,13 @@ function App() {
         <Link to="/">Page1</Link>
         <Link to="/P2?hohoho=1#p34">Page2</Link>
         <Link to="/P3">Page3</Link>
+        <Link to="/P2-P3B">Page3B</Link>
         <div>
           <Route exact path="/" component={Page1} />
           <Route path="/P2" component={Page2} />
           <Route path="/P3" component={Page3} />
           <Route path="/P2/P3" component={Page3} />
+          <Route path="/P2-P3B" component={Page3} />
           <Route path="/P2/P3/P4" component={Page4} />
         </div>
       </Router>
