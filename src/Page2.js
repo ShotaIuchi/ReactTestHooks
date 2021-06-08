@@ -5,7 +5,7 @@ import "./App.css";
 function Page2() {
   const [data, setData] = useState(false);
   console.log(`Page2:${data}`);
-  if (data == false) {
+  if (!data) {
     setData(true);
   }
 
