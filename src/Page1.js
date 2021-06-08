@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { useHistory } from "react-router";
+import { useEffect, useState } from "react";
+import { useHistory, useLocation } from "react-router";
 import './App.css';
 
 function Page1() {
@@ -10,6 +10,14 @@ function Page1() {
   }
 
   const history = useHistory();
+
+  const location = useLocation()
+  useEffect(() => {
+    console.log(`location1:${location.pathname}`)
+    console.log(`location1:${location.search}`)
+    console.log(`location1:${location.hash}`)
+    console.log(`location1:${location.state}`)
+  }, [location]);
 
   return (
     <div className="App">

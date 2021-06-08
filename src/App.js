@@ -16,8 +16,10 @@ function App() {
   return (
     <div className="App">
       <Router>
-        {/* <Link to="/">Page1</Link> */}
-        <Link to="/P2">Page2</Link>
+         {/* forceRefresh={false}> */}
+        <Link to="/">Page1</Link>
+        <Link to="/P2?hohoho=1#p34">Page2</Link>
+        <Link to="/P3">Page3</Link>
         <div>
           <Route exact path="/" component={Page1} />
           <Route path="/P2" component={Page2} />
